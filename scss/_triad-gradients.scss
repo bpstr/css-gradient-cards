@@ -1,0 +1,13 @@
+
+@each $color, $code in $theme-colors {
+  .bg-triad-#{$color} {
+    background:
+        linear-gradient(217deg, transparentize($code,.4), transparentize($code,1) 71%),
+        linear-gradient(127deg, transparentize($code,.2), transparentize($code,1) 71%),
+        linear-gradient(336deg, transparentize($code,.3), transparentize($code,1) 71%);
+  }
+}
+
+
+
+
